@@ -1,0 +1,77 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+import Gallery from '../components/Gallery.astro';
+
+import lutyens from '../images/arts-crafts/lutyens.jpg';
+import seats from '../images/arts-crafts/lutyens-seats.jpg';
+import veg from '../images/arts-crafts/lutyens-veg.jpg';
+import gravel from '../images/arts-crafts/lutyens-gravel.jpg';
+import plan from '../images/arts-crafts/lutyens-plan.jpg';
+---
+
+<Layout
+  title="The Arts and Crafts Garden - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+  description="Charlotte's Arts and Crafts garden design, featuring Lutyens steps and Gertrude Jekyll planting."
+>
+	<h2>The Arts and Crafts Garden</h2>
+	<div class="album">
+		<Image
+			class="img-large"
+			src={lutyens}
+			title="The Arts and Crafts Garden"
+			alt="The main lawn and flowers beds in the arts and crafts garden"
+		/>
+	</div>
+	<p class="lead">This sloping garden in West Littleton was 
+			designed for a keen gardener and an enthusiastic vegetable grower. She counteracted the slope with
+			terracing and created little seating areas to chase the sun around the garden. Her client wanted to add
+			her own Gertrude Jeykll style planting, so it seemed only natural that she take inspiration from one of her
+			design heroes, Sir Edwyn Lutyens, for the hard landscaping, in particular his distinctive circular stone
+			steps.</p>
+	<Gallery>
+		<GalleryImage
+			narrowTallCaption
+			title="The Arts and Crafts Garden — Lutyens Steps"
+		>
+			<Image
+				title="The Arts and Crafts Garden — Lutyens Steps"
+				alt="A set of Lutyens steps with two large planters either side next to a table and a set of chairs"
+				src={seats}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The Arts and Crafts Garden — Veg beds"
+		>
+			<Image
+				title="The Arts and Crafts Garden — Veg beds"
+        alt="Four large raised beds containing a variety of vegetables"
+				src={veg}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The Arts and Crafts Garden — Patio"
+		>
+			<Image
+				title="The Arts and Crafts Garden — Patio"
+        alt="A small bistro set on a patio of Cotswold stone slabs surrounded by gravel and small planters"
+				src={gravel}
+			/>
+		</GalleryImage>
+	</Gallery>
+	<div class="album">
+		<Image
+			class="img-large"
+			src={plan}
+			title="The drawing for the garden"
+			alt="Charlotte's drawing for the arts and crafts garden"
+		/>
+	</div>
+	<div class="center">
+		<p class="lead">
+			<a href="/#design">Back to Charlotte's Gardens</a>
+		</p>
+	</div>
+</Layout>

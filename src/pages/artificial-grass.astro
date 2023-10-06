@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+
+import tft from '../images/tft/TimeForTurf.png';
+
+import Layout from '../layouts/Brochure.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+---
+
+<Layout
+  title="Artificial Grass - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+  description="The campaign against artificial grass with details of alternatives to artifical grass."
+>
+  <h2>#TimeForTurf Artificial Grass Campaign</h2>
+  <div class="columns">
+    <div class="col one-half">
+      <p class="lead">
+        Artificial grass is getting extremely popular among homeowners. And we can completely understand why!
+      </p>
+      <p class="lead">
+        You might want the easy life that it's said to provide or are looking for your garden to be another room. Unfortunately, we're all being sold lies by artificial grass manufacturers.
+      </p>
+      <p class="lead">
+        We will explore the lies in this free report (<a href="/TimeForTurf Artificial Grass Report.pdf" target="_blank">download here</a>), but most importantly provide you with some SOLUTIONS.
+      </p>
+      <p class="lead">
+        All too often, awareness campaigns are just focused purely on the environment or the negative aspects of artificial lawns. Although we do explore these important points, our aim is to provide you with a resource with solutions and guidance.
+      </p>
+      <p class="lead">
+        <a href="/TimeForTurf Artificial Grass Report.pdf" target="_blank">Click here to download the free report.</a> Feel free to share with others, and join in the conversation using #TimeForTurf on social media.
+      </p>
+    </div>
+    <div class="col one-half">
+      <GalleryImage>
+        <Image
+          src={tft}
+          alt="Charlotte and Paula from The Landscaper's Circle"
+        />
+      </GalleryImage>
+    </div>
+  </div>
+</Layout>

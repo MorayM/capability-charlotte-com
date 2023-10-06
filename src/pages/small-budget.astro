@@ -1,0 +1,71 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+import Gallery from '../components/Gallery.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+
+import before from '../images/low-budget/before.jpg';
+import during from '../images/low-budget/during.jpg';
+import compost from '../images/low-budget/compost.jpg';
+import design from '../images/low-budget/design.jpg';
+import above from '../images/low-budget/above.jpg';
+---
+
+<Layout
+  title="The Low Budget Garden - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+  description="Creating a beautiful low budget garden of curved flower beds and wide paths."
+>
+  <h2>The Small Budget Garden</h2>
+  <Gallery>
+    <GalleryImage title="The Small Budget Garden — Before" text="With Moray her husband and surveying assistant">
+      <Image
+        title="The Small Budget Garden — Before"
+        alt="A patch of lawn surrounded by slabs and a high fence"
+        src={before}
+      />
+    </GalleryImage>
+    <GalleryImage title="The Small Budget Garden — After" text="Some of the pants from their old garden will be given a new home">
+      <Image
+        title="The Small Budget Garden — During"
+        alt="The same space but with curved beds and gravel paths between them"
+        src={during}
+      />
+    </GalleryImage>
+  </Gallery>
+  <p class="lead">
+    This tiny 5m x 5m space in a new build in Bradford on Avon, was a dull patch of grass surrounded by cheap pavers. 
+    The clients were retired and were keen gardeners but wanted a garden that was future proof. They also only had a 
+    budget of £6,000 Charlotte knew that she would have to create structure with plants rather than hard landscaping. 
+    Inspired by a paisley shawl, Charlotte designed quirkily-shaped flower beds edged in Everedge steel, the wide paths 
+    were laid to ‘As Dug’ gravel. As the garden was so small, every inch of the space was utilised, the benches are storage 
+    benches and the shed is painted a pretty colour. Even the compost bin is shaped like a beehive!
+  </p>
+  <div class="album">
+    <Image class="img-large" src={compost} alt="The beehive compost bin" />
+  </div>
+  <p class="lead">
+    The clients love the garden, especially from their first floor living room window where the pattern can really be seen. Planting is already underway. Photos to follow…
+  </p>
+  <Gallery>
+    <GalleryImage title="The design">
+      <Image
+        title="The design"
+        alt="The design of the garden and the shape of the beds"
+        src={design}
+      />
+    </GalleryImage>
+    <GalleryImage title="The garden from above" text="Photo courtesy of client">
+      <Image
+        title="The garden from above"
+        alt="The garden from above"
+        src={above}
+      />
+    </GalleryImage>
+  </Gallery>
+  <div class="center">
+    <p class="lead">
+      <a href="/#design">Back to Charlotte's Gardens</a>
+    </p>
+  </div>
+</Layout>

@@ -1,0 +1,59 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+import Gallery from '../components/Gallery.astro';
+import Testimonial from '../components/Testimonial.astro';
+
+import before from '../images/long-narrow/long-narrow-before.jpg';
+import after from '../images/long-narrow/long-narrow-after.jpg';
+import kay from '../images/long-narrow/kay.jpg';
+import design from '../images/long-narrow/long-narrow-design.jpg';
+---
+
+<Layout
+	title="The Long Narrow Garden - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+	description="A long, narrow terraced house garden transformed into a beautiful private space with year-round colour."
+>
+	<h2>The Long Narrow Garden</h2>
+	<Gallery>
+		<GalleryImage title="The Long Narrow Garden — Before">
+			<Image
+				title="The Long Narrow Garden — Before"
+        alt="A bare thin strip of grass with a slab path leading to an old shed"
+				src={before}
+			/>
+		</GalleryImage>
+		<GalleryImage title="The Long Narrow Garden — After">
+			<Image
+				title="The Long Narrow Garden — After"
+        alt="A large circle of slabs surrounded by packed flower beds with a small path leading down to a summer house"
+				src={after}
+			/>
+		</GalleryImage>
+	</Gallery>
+	<p class="lead">
+		Several years later, Kay still raves about her garden. This is the classic, long, narrow garden you get 
+		with early 20th century terraces. The crumbling fences were replaced with good quality trellis-topped 
+		fences to afford Kay the feeling of privacy without losing light. The dismal, cracked, concrete path was 
+		dug up and replaced with a stone circle which has both created a focal point and split the garden into 
+		sections making it appear wider and shorter. There are small, easy to maintain beds with year-round colour. 
+		The depressing shed has been replaced with an off-the-peg summer house, made individual with a classy 
+		vintage-style coat of paint. Kay now has a little seated haven at each end of the garden to catch both 
+		the morning and the evening sun.
+	</p>
+	<p class="lead">Built by Chris Swinburn, The Garden Doctor</p>
+	<div class="album">
+		<Image class="img-large" src={kay} alt="Kay enjoying her garden" />
+	</div>
+	<Testimonial keyName="kay" />
+	<div class="album">
+		<Image class="img-large" src={design} alt="Charlotte's drawing for the long narrow garden" />
+	</div>
+	<div class="center">
+		<p class="lead">
+			<a href="/#design">Back to Charlotte's Gardens</a>
+		</p>
+	</div>
+</Layout>

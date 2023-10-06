@@ -1,0 +1,28 @@
+---
+const { title,
+	text = '',
+	link,
+	fomText = 'Find out more...',
+	tallCaption = false,
+	narrowTallCaption = false,
+} = Astro.props;
+
+const classes = ['gallery-caption'];
+if (text) classes.push('gallery-caption-expand');
+if (tallCaption) classes.push('tall-caption');
+if (narrowTallCaption) classes.push('narrow-tall-caption');
+---
+
+<>
+  <slot />
+  {(title || text) && <div class={classes.join(' ')}>
+    <h3>
+      {link ? <a href={link}>{title}</a> : title}
+    </h3>
+    {text &&
+      <p>
+        {text} {link && <a href={link} title="Find out more">{fomText}</a>}
+      </p>
+    }
+  </div>}
+</>

@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+
+import charlotte from '../../images/charlotte-garden.jpg';
+
+import Gallery from '../Gallery.astro';
+import GalleryImage from '../GalleryImage.astro';
+import Testimonial from '../Testimonial.astro';
+---
+
+<Testimonial keyName="laura" />
+<Gallery>
+	<GalleryImage
+		title="Charlotte in a Japanese garden she created with her late mother"
+		text="Photo by Guy Bellingham"
+		tallCaption
+	>
+		<Image
+			title="Charlotte in a Japanese garden she created with her late mother"
+			alt="Charlotte in a Japanese garden she created with her late mother. Photo by Guy Bellingham"
+			src={charlotte}
+		/>
+	</GalleryImage>
+</Gallery>

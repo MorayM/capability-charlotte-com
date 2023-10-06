@@ -1,0 +1,51 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+
+import cover from '../images/new-build/cover.jpg';
+---
+
+<Layout
+  title="The New Build Garden - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+  description="How Charlotte transformed a new build garden with low maintenance pollinator-friendly plants."
+>
+  <h2>The New Build Garden</h2>
+  <p class="lead">
+    Charlotte specialises in new build gardens, she knows the problems they come with, the awful soil, 
+    the small, awkward-shaped spaces and the dreadful drainage, but she knows how to deal with them! Many 
+    people will give up and add raised beds and fake grass but Charlotte believes in planting in the soil.
+  </p>
+  <p class="lead">
+    Inspired by Charles Dowding's 'No Dig' gardening method, she encourages clients to improve their soil 
+    first and foremost with drainage and plenty of organic matter. Once this is done and the plants are in, 
+    the roots create their own little eco system beneath the ground aerating, draining and feeding the soil 
+    in a magical symbiosis. Lawns are kept to a minimum and replaced with tightly packed, low maintenance, 
+    pollinator-friendly plants.
+  </p>
+  <div class="album">
+    <Image class="img-large" src={cover} alt="The new build garden, freshly planted" />
+  </div>
+  <p class="lead">
+    This sloping, new build garden in Melksham was a depressing patch of chafer grub-addled grass. The client 
+    wanted to something to look out on while working on her kitchen table. The dark green fence was painted an 
+    elegant blue grey which really sets off the plants and compliments the client's interior decor.
+  </p>
+  <p class="lead">
+    The grass was impossible to keep, so Charlotte used 'As Dug' gravel, a bi-product of the quarrying industry, 
+    this gravel is self-binding so doesn't 'travel' down slopes. Charlotte softened the gravel with self-seeding 
+    flowers like erigeron and verbena bonariensis, soft 'floofy' perennials like gaura 'Whirling Butterflies' and 
+    perovskia 'Blue Spire' and tall grasses like pennisetum macrourum provide a strong backdrop and year-round interest. 
+    Herbs are planted at the front, close to the kitchen. Shrubs like sambucus nigra and hydrangea 'Annabelle' 
+    provide depth, while climbers will soften the fence eventually and blur the boundaries. The plants are cleverly 
+    planted to create a natural 'path' to a contemporary stool at the back.
+  </p>
+  <p class="lead">
+    Rebecca now absolutely adores her garden and says it gives her joy every day of the year.
+  </p>
+  <div class="center">
+    <p class="lead">
+      <a href="/#design">Back to Charlotte's Gardens</a>
+    </p>
+  </div>
+</Layout>

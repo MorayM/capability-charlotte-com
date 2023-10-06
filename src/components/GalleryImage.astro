@@ -1,0 +1,11 @@
+---
+import InnerImage from './InnerImage.astro';
+const props = Astro.props;
+---
+
+<div class="gallery-image">
+	{props.link
+		? <a href={props.link}><InnerImage {...props}><slot /></InnerImage></a>
+		: <InnerImage {...props}><slot /></InnerImage>
+	}
+</div>

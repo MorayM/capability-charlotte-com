@@ -1,0 +1,75 @@
+---
+type Testimonial = { person: string, text: string };
+type Testimonials = {
+  testimonials: {
+    [key: string]: Testimonial
+  }
+}
+
+const { keyName } = Astro.props
+
+const data: Testimonials = {
+  testimonials: {
+    "kay": {
+      "person": "Kay — Bristol",
+      "text": "Charlotte transformed my sad, scruffy patch of grass into a beautiful garden with her inspired design. It is now my pride and joy."
+    },
+    "nat": {
+      "person": "Natasha — Bradford-on-Avon",
+      "text": "Thank you so much for transforming our garden. You’ve made your designs come alive and we can now enjoy our garden. Thank you."
+    },
+    "diluki": {
+      "person": "Diluki — Bath",
+      "text": "Charlotte transformed our awful front garden from being an embarrassment ... to a lush aromatic haven for bees. She also managed to make it easy for two non-gardeners to maintain it whilst giving lots of supportive advice. She is incredibly hard-working with a clear design vision. If we ever have a back garden, we will be employing her to design it."
+    },
+    "liz": {
+      "person": "Elizabeth — Beanacre",
+      "text": "Charlotte was super helpful in our garden advice session! Very friendly to chat to, and so many brilliant ideas. I now have lots of notes on plant suggestions and shape ideas specific to our garden. Most importantly, we're motivated to get going on it now with a better idea of which direction to take it in. Would definitely recommend."
+    },
+    "sue": {
+      "person": "Sue — Weston-super-Mare",
+      "text": "Charlotte has a wonderful ability to visualise a garden. We struggled for 3+ years with half a garden in tiers of concrete and the other half an overgrown mess, then Charlotte came for a visit. As she walked down the garden she pointed out things we'd never noticed and shared her ideas for every aspect, design, planting, seating, lighting, etc. She followed this up with a detailed written design so we could work our way through the garden one job at a time. In less than a year the 'overgrown mess' has become a garden where you can sit and listen to the waterfall and relax. Thank you Charlotte, it would never have happened without you."
+    },
+    "michelle": {
+      "person": "Michelle — Trowbridge",
+      "text": "Capability Charlotte did a house plant audit in my home with a thorough consultation and a fun morning's shopping in local nurseries and garden centers. She even spent time with my daughters teaching them about propagating. It surpassed my expectations, especially the fact she spent time educating my girls. Perfect for keeping children occupied while schools are closed"
+    },
+    "keeley": {
+      "person": "Keeley — Atworth",
+      "text": "Charlotte has been absolutely fantastic from the moment she stepped foot in our garden. We would like to thank her so much for her help and inspiration which will turn our garden into something much more enjoyable and will allow our daughter to feel like she owns part of it too."
+    },
+    "wi": {
+      "person": "Minerva WI — Bath",
+      "text": "...It was an entertaining and informative talk, Charlotte effortlessly engaged with our group and shared her fascinating journey about how she’s got to where she is with Capability Charlotte ... We cannot recommend Charlotte enough and are so grateful to her for tailoring such a beautiful event for our group, the feedback was overwhelmingly positive! We look forward to welcoming her back!"
+    },
+    "laura": {
+      "person": "Laura — Bradford-on-Avon",
+      "text": "Charlotte’s professional and friendly approach transformed our plain new build garden into a multi purpose family garden. Her energy and enthusiasm for gardening was contagious and she showed us how we can enjoy it throughout the year. She turned part of the garden into a kitchen garden with raised beds to allow us to grow produce with the children as well as creating a larger patio area to enjoy eating outside. All within our tight budget! We would highly recommend her! Thank you Charlotte!"
+    },
+    "lucy": {
+      "person": "Lucy — Winsley",
+      "text": "Wonderfully creative & clever with my small, cottage garden and extremely warm and personable. Charlotte’s extensive knowledge was freely given as she walked with me around my place, understanding what I wanted to change to make this a soothing space for therapy & art clients plus my family and ‘busy’ dog. On further visits, Charlotte was enthusiastic with what I had accomplished from her advice. I have fallen in love with my garden again and can’t wait til Spring to see it all growing & taking shape. THANKYOU!"
+    },
+    "dom": {
+      "person": "Dominic — Staverton",
+      "text": "Thank you for a great design. Love the way you sussed what I wanted and needed. Amazing"
+    },
+    "wendy": {
+      "person": "Wendy — Corsham",
+      "text": "It’s great to work with Charlotte and use her knowledge to help us achieve a lovely outdoor space for us and nature to enjoy for years to come! Very collaborative and very bespoke service designed for us! Love the personal touches which showed how well you listened. Thank you Charlotte so very much for supporting us through the maze of choices!"
+    },
+    "peppa": {
+      "person": "Peppa — London",
+      "text": "I couldn’t recommend Charlotte more highly for any venue decor/design consultancy and delivery! Charlotte designed all of the beautiful venue decor for our December barn wedding. We were looking for a lot of greenery and lovely unique touches, which is why we chose to work with Charlotte rather than a standard florist. Charlotte was very professional and so creative and really brought our vision to life - going the extra mile eg going to a mistletoe auction to buy enough mistletoe to really make an impact at the venue. She also worked with a local florist to design and build our bouquets and button holes. The venue looked absolutely stunning and magical with all of the candles and greenery. We received so many compliments on the day! Very glad we worked with Charlotte :)"
+    },
+    "": {
+      "person": "",
+      "text": ""
+    }
+  }
+}
+---
+
+<p class="testimonial">
+  <em>“{data.testimonials[keyName].text}”</em><br />{data.testimonials[keyName].person}
+</p>

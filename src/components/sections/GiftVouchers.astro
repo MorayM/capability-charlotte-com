@@ -1,0 +1,38 @@
+---
+import { Image } from 'astro:assets';
+
+import voucher from '../../images/voucher.jpg';
+
+import GalleryImage from '../GalleryImage.astro';
+---
+
+<section>
+	<h2 id="vouchers">Gift Vouchers</h2>
+	<div class="columns">
+		<div class="col one-quarter">
+			<GalleryImage>
+				<Image
+					src={voucher}
+					alt="A Capability Charlotte gift voucher showing a variety of flowers on the cover"
+				/>
+			</GalleryImage>
+		</div>
+		<div class="col three-quarters">
+			<p class="lead">
+				Are you struggling to think of a perfect present for your loved ones? Don't waste money on
+				things that will become landfill, buy them an experience.<br />
+				Do you know someone who has a garden but doesn't know what to do with it? Why not buy them some
+				time with a garden expert. These beautiful gift cards can be used for any occasion.
+			</p>
+			<ul>
+				<li>Prices start at £70 for an hour of garden advice.</li>
+				<li>£250 pays for a full garden consultation with a follow-up written report which will include
+					guidance on maintenance as well as advice on how to make the most of the garden, with
+					pictures and links to helpful websites.</li>
+				<li>For a more generous gift, a full garden design starts from only £900.</li>
+			</ul>
+			<p><a href="/terms#vouchers" title="Voucher terms and conditions">Terms and conditions
+					apply</a>, travel expenses to further afield may be charged.</p>
+		</div>
+	</div>
+</section>

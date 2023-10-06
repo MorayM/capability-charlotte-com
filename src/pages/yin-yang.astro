@@ -1,0 +1,92 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+import Gallery from '../components/Gallery.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+import Testimonial from '../components/Testimonial.astro';
+
+import backBefore from '../images/yy/back-before.jpg';
+import backAfter from '../images/yy/yy-back-after-m.webp';
+import portrait from '../images/yy/mirror-portrait.jpg';
+import lantern from '../images/yy/japanese-lantern.jpg';
+import design from '../images/yy/design.jpg';
+---
+
+<Layout
+  title="The New Build Garden - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+  description="Transforming a new build garden into a haven for yoga and meditation with wildflower turf and cottage style gardening."
+>
+  <h2>The Yin and Yang Garden</h2>
+  <Gallery>
+    <GalleryImage tallCaption title="Before">
+      <Image
+        title="Before"
+        alt="The garden before transformation. The whole garden is turfed with no beds or other features."
+        src={backBefore}
+      />
+    </GalleryImage>
+    <GalleryImage tallCaption title="After">
+      <Image
+        alt="The finished garden with a table and chairs on gravel paths winding through shrubs and wildflowers. Photo by Victoria Tapper"
+        title="After. Photo by Victoria Tapper"
+        src={backAfter}
+      />
+    </GalleryImage>
+  </Gallery>
+  <div class="columns">
+    <div class="col one-third">
+      <GalleryImage>
+        <Image
+          title="Photo by Victoria Tapper"
+          alt="A rococco-style mirror is seen hanging on a wall through a border of wildflowers. Photo by Victoria Tapper"
+          src={portrait}
+        />
+      </GalleryImage>
+    </div>
+    <div class="col two-thirds">
+      <p class="lead">
+        This sloping new-build garden was built on a brownfield site, the site of RN Copenacre. 
+        It had the most appalling, heavy, clay soil, filled with rubble. Rather than spend thousands pulling out the rubble, 
+        sending it to landfill and bringing in tonnes of alien topsoil, Charlotte and landscaper Jon Gerrish, 
+        from Paved in Stone, worked with the soil and slope, creating hoggin paths that lead you on a journey around 
+        the garden and planting it with wild flowers and clay-loving roses, perennials and trees.
+      </p>
+      <p class="lead">
+        Because the garden slopes towards the house, making the garden as permeable as possible was key. 
+        The paving was kept to a minimum, just enough to hold a table and chairs, the larger paved area was laid to 
+        permeable wood effect sleepers. We can now rest easy that this garden will not contribute to the water run-off 
+        that plagues heavily paved and plastic turfed gardens.
+      </p>
+      <p class="lead">
+        The client is heavily into yoga, meditation and is a crystal healer they also love wildlife, cottage gardens and 
+        shabby chic décor, the challenge was to fit this all into a relatively small garden. This is when Charlotte hit 
+        on the Yin and Yan idea to represent the two sides of the client. A corridor of white planting and a beautiful 
+        lawn of wildflower turf acts as the transition point.
+      </p>
+      <p class="lead">
+        The four seating areas are placed carefully to make the most of the sun at different times of the day 
+        with room to add a yoga pavilion and moon gate in the future.
+      </p>
+      <p>Garden built by Paved in Stone</p>
+    </div>
+  </div>
+  <div class="album">
+    <GalleryImage>
+      <Image
+        src={lantern}
+        title="Photo by Victoria Tapper"
+        alt="A view through a Japanese-themed area of the garden to a seating area in the distance. Photo by Victoria Tapper"
+      />
+    </GalleryImage>
+  </div>
+  <Testimonial keyName="wendy" />
+  <div class="album">
+    <Image class="img-large" src={design} alt="Charlotte's drawing for the Yin and Yang Garden" />
+  </div>
+  <div class="center">
+    <p class="lead">
+      <a href="/#design">Back to Charlotte's Gardens</a>
+    </p>
+  </div>
+</Layout>

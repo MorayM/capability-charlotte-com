@@ -1,0 +1,82 @@
+---
+import { Image } from 'astro:assets';
+import header from '../../images/vt/vt-header.jpg';
+import wildlife from '../../images/vt/vt-wildlife.jpg';
+import oasis from '../../images/vt/vt-oasis.jpg';
+import cost from '../../images/vt/vt-cost.jpg';
+
+import Gallery from '../Gallery.astro';
+import GalleryImage from '../GalleryImage.astro';
+---
+
+<section>
+  <h2 class="hidden">Introduction</h2>
+  <Gallery huge>
+    <GalleryImage>
+      <Image
+        alt="Charlotte taking notes at a table in a shed. Photo by Victoria Tapper"
+        title="Charlotte Howard. Photo by Victoria Tapper"
+        src={header}
+      />
+    </GalleryImage>
+  </Gallery>
+  <p class="lead">
+    Are you looking for someone to help you create the low maintenance, wildlife-friendly garden of your dreams?
+  </p>
+  <Gallery huge>
+    <GalleryImage>
+      <Image
+        alt="Two sun loungers in the distance, seen through tall wildflowers. Photo by Victoria Tapper"
+        title="Sun loungers through wildflowers. Photo by Victoria Tapper"
+        src={wildlife}
+      />
+    </GalleryImage>
+  </Gallery>
+  <div class="columns">
+    <div class="col three-quarters">
+      <p class="lead">
+        This year would you like to spend more time in your garden without worrying about how it looks?
+      </p>
+      <p class="lead">
+        Do you basically know what you want but are struggling to visualise it?
+      </p>
+      <p class="lead">
+        Well, you've come to the right place, Charlotte can help you. 
+        With over two decades of experience as a hands-on gardener, garden designer and horticultural adviser for a huge variety of gardens, you can rest assured that Charlotte knows what she is doing.
+      </p>
+      <p class="lead">
+        In these troubled times those of us lucky enough to have an outside space realise what an oasis of calm it can be.
+      </p>
+      <p class="lead">
+        Being in gardens and outside places can vastly improve both our mental and physical health, that's a scientific fact, but if your garden isn't working for you it can just feel like a burden. It doesn’t have to be like that, Charlotte feels gardens should work for you not you for them.
+      </p>
+    </div>
+    <div class="col one-quarter">
+      <GalleryImage>
+        <Image
+          alt="A rococco-style mirror is seen hanging on a wall through a border of wildflowers. Photo by Victoria Tapper"
+          title="An oasis of calm. Photo by Victoria Tapper"
+          src={oasis}
+        />
+      </GalleryImage>
+    </div>
+  </div>
+  <div class="columns">
+    <div class="col one-third">
+      <GalleryImage>
+        <Image
+          alt="Charlotte sits in the sun at a table in her garden, reading several books. Photo by Victoria Tapper"
+          title="Charlotte at work in her garden. Photo by Victoria Tapper"
+          src={cost}
+        />
+      </GalleryImage>
+    </div>
+    <div class="col two-thirds">
+      <h3>How much will it cost?</h3>
+      <p class="lead">
+        "It all depends" is always the answer. A good rule of thumb is to think how much you'd be willing to spend on a kitchen and that's a good starting point. Gardens aren't cheap, but Charlotte has experience of working with the tightest of budgets. 
+        A well-designed garden is a great investment, it can vastly improve both your quality of life and the value of your home.
+      </p>
+    </div>
+  </div>
+</section>

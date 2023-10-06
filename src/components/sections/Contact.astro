@@ -1,0 +1,69 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon';
+
+import van from '../../images/vt/vt-van.jpg';
+
+import GalleryImage from '../GalleryImage.astro';
+---
+
+<section>
+	<h2 id="contact">Contact</h2>
+	<div class="columns">
+		<div class="col one-half">
+			<p class="lead">For more information on any of her services, or to book an appointment, please
+				fill in the form below:</p>
+				<form
+					name="contact"
+					method="POST"
+					data-netlify="true"
+					data-netlify-honeypot="bot-field"
+					action="/success/"
+				>
+					<input type="hidden" name="form-name" value="contact" />
+					<div>
+						<div>
+							<p hidden>
+								<label>
+									Do not fill this out: <input name="bot-field" />
+								</label>
+							</p>
+							<p>
+								<label>Your Name: <input type="text" name="name" /></label>
+							</p>
+							<p>
+								<label>Your Email: <input type="email" name="email" /></label>
+							</p>
+							<p>
+								<label>Message: <textarea name="message" rows="5"></textarea></label>
+							</p>
+							<p>
+								<button type="submit">Send</button>
+							</p>
+						</div>
+					</div>
+				</form>
+			<p class="lead">
+				Or find her on social media:
+				<a target="_blank" rel="noreferrer" class="social" aria-label="Capbility Charlotte on Facebook" href="https://www.facebook.com/capabilitycharlottegardens/">
+					<Icon name="fa-brands:facebook" class="contact-icon" />
+				</a>
+				<a target="_blank" rel="noreferrer" class="social" aria-label="Capbility Charlotte on Twitter" href="https://twitter.com/capabilitycharl">
+					<Icon name="fa-brands:twitter" class="contact-icon" />
+				</a>
+				<a target="_blank" rel="noreferrer" class="social" aria-label="Capbility Charlotte on Twitter" href="https://www.instagram.com/capabilitycharlottegardens/">
+					<Icon name="fa-brands:instagram" class="contact-icon" />
+				</a>
+			</p>
+		</div>
+		<div class="col one-half">
+		<GalleryImage title="I look forward to hearing from you!">
+			<Image
+				src={van}
+				alt="Charlotte sitting on the back of her van. Photo by Victoria Tapper"
+				title="I look forward to hearing from you! Photo by Victoria Tapper"
+			/>
+		</GalleryImage>
+		</div>
+	</div>
+</section>

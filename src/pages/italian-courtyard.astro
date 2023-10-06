@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+import Gallery from '../components/Gallery.astro';
+
+import before from '../images/italian/archway-before.jpg';
+import after from '../images/italian/archway-after.jpg';
+import plan from '../images/italian/design.jpg';
+---
+
+<Layout
+  title="Italian Courtyard Garden - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+  description="Charlotte's Italian Courtyard garden design. Simple Mediterranean planting in a small space."
+>
+	<h2>The Italian Courtyard Garden</h2>
+	<Gallery>
+		<GalleryImage title="The Italian Courtyard Garden — Before">
+			<Image
+				title="The Italian Courtyard Garden — Before"
+        alt="An overgrown and unkempt garden in a small space behind an old cottage"
+				src={before}
+			/>
+		</GalleryImage>
+		<GalleryImage title="The Italian Courtyard Garden — After">
+			<Image
+				title="The Italian Courtyard Garden — After"
+        alt="The same space but transformed with Mediterranean-inpsired planting, archways and mirrors"
+				src={after}
+			/>
+		</GalleryImage>
+	</Gallery>
+	<p class="lead">Garden designs don’t have to be expensive or over complicated. This dingy, un-loved garden
+		in Biddestone was transformed into a Mediterranean-inspired haven in a short time and for a low budget.
+		The addition of mirrors helped increase the feeling of light and space. Simple changes such as good
+		quality gravel, restored raised beds a stylish bench and replacement Voisey-style door furniture on the
+		shed made all the difference. The client was thrilled.</p>
+	<p class="lead">Built by James Lock</p>
+	<div class="album">
+		<Image class="img-large" src={plan} alt="Charlotte's drawing for the Italian courtyard garden" />
+	</div>
+	<div class="center">
+		<p class="lead">
+			<a href="/#design">Back to Charlotte's Gardens</a>
+		</p>
+	</div>
+</Layout>

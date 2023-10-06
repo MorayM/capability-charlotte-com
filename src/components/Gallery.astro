@@ -1,0 +1,16 @@
+---
+const { children, large = false, huge = false, med = false, small = false } = Astro.props;
+let sizeClass = 'impact-gallery-med';
+if (small) sizeClass = 'impact-gallery-small'
+if (med) sizeClass = 'impact-gallery-med'
+if (large) sizeClass = 'impact-gallery-large'
+if (huge) sizeClass = 'impact-gallery-huge'
+
+const classes = `impact-gallery ${sizeClass}`
+---
+
+<div class={classes}>
+	<div class="gallery-row">
+		<slot />
+	</div>
+</div>

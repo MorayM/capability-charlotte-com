@@ -1,0 +1,76 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+import Gallery from '../components/Gallery.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+
+import road from '../images/wadswick/road.jpg';
+import summer9 from '../images/wadswick/garden-9-summer-cropped.jpg';
+import winter9 from '../images/wadswick/garden-9-winter-cropped.jpg';
+import summer7 from '../images/wadswick/garden-7-summer-cropped.jpg';
+import presentation from '../images/wadswick/presentation.jpg';
+import tulips from '../images/wadswick/tulips-close-cropped.jpg';
+---
+
+<Layout
+  title="Wadswick Green - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+  description="Designing, building and managing 12 gardens for a large high-end retirement community."
+>
+  <h2>Wadswick Green</h2>
+  <div class="album">
+    <Image class="img-large" src={road} alt="A Close in Wadswick Green" />
+  </div>
+  <p class="lead">In 2016 I was asked to create a complete a series of planting plans for Wadswick Green, a high-end
+    retirement community in Corsham. They had created a vibrant and energised community and wanted to create feature
+    gardens which would echo the high design ethos of the scheme as a whole.
+    They needed an inspirational garden and landscape designer to create planting schemes and designs for the more
+    formal garden areas.</p>
+  <Gallery>
+    <GalleryImage title="Garden 9 - Summer Colours">
+      <Image
+        title="Garden 9 - Summer Colours"
+        alt="The summer colours in a garden in Wadswick Green"
+        src={summer9}
+      />
+    </GalleryImage>
+    <GalleryImage title="Garden 9 - Winter Colours">
+      <Image
+        title="Garden 9 - Winter Colours"
+        alt="The winter colours in a garden in Wadswick Green"
+        src={winter9}
+      />
+    </GalleryImage>
+  </Gallery>
+  <p class="lead">I created full colour, handrawn garden designs and planting plans for 12 large gardens, a wildlife
+    pond and various beds arouns the public spaces. They also wanted two drawings for each garden showing winter and
+    summer colour, these all had to be produced in four weeks in order to present to the residents</p>
+  <Gallery>
+    <GalleryImage title="Garden 7 - Summer Colours">
+      <Image
+        title="Garden 7 - Summer Colours"
+        alt="The summer colours in a garden in Wadswick Green"
+        src={summer7}
+      />
+    </GalleryImage>
+    <GalleryImage title="Presenting the drawings to residents" text="Charlotte's associate Sarah Moor-Bardell assisting answering questions from residents about the gardens.">
+      <Image
+        title="Presenting the drawings to residents"
+        alt="Presenting the drawings to residents"
+        src={presentation}
+      />
+    </GalleryImage>
+  </Gallery>
+  <p class="lead">Within two months of their first approach to me, we had received a consignment of 4,500 plants
+    which were planted in one day by me and my team. I was then given the position of head gardener for the first
+    year in order to run the initial maintenance, to work with the landscaping contractors and plan and oversee
+    further planting of the gardens which included ordering and planting over 16,000 bulbs.</p>
+  <div class="album">
+    <Image class="img-large" src={tulips} alt="Freshly-planted purple tulips" />
+  </div>
+  <div class="center">
+    <p class="lead">
+      <a href="/#management">Back to Management and Planting</a>
+    </p>
+  </div>
+</Layout>

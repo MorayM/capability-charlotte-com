@@ -1,0 +1,75 @@
+---
+import { Image } from 'astro:assets';
+
+import Layout from '../layouts/Brochure.astro';
+import GalleryImage from '../components/GalleryImage.astro';
+import Gallery from '../components/Gallery.astro';
+import Testimonial from '../components/Testimonial.astro';
+
+import before from '../images/low-maintenance/before-from-house.jpg';
+import after from '../images/low-maintenance/cover.jpg';
+import beforeToHouse from '../images/low-maintenance/before-to-house.jpg';
+import afterToHouse from '../images/low-maintenance/after-to-house.jpg';
+import drawing from '../images/low-maintenance/drawing.jpg';
+---
+
+<Layout
+	title="The Low Maintenance Garden - Capability Charlotte - Wiltshire-based wildlife friendly gardens"
+	description="An example of a low-maintenance bee-friendly and wildlife-friendly garden full of flowers and grasses."
+>
+	<h2>The Low-Maintenance, Bee-Friendly Garden</h2>
+	<Gallery>
+		<GalleryImage tallCaption title="The Low-Maintenance, Bee-Friendly Garden — Before">
+			<Image
+				src={before}
+				title="The Low-Maintenance, Bee-Friendly Garden — Before"
+        alt="An overgrown lawn and beds with a concrete path leading down to a canal"
+			/>
+		</GalleryImage>
+		<GalleryImage tallCaption title="The Low-Maintenance, Bee-Friendly Garden — After">
+			<Image
+				src={after}
+				title="The Low-Maintenance, Bee-Friendly Garden — After"
+        alt="The same garden, now with bursting flower beds and newly painted fence"
+			/>
+		</GalleryImage>
+	</Gallery>
+	<p class="lead">
+		This long, narrow garden is in a beautiful location leading down to a canal, but it was a messy patch of grass and the client had 
+		fallen out of love with the space. The existing straight, grey, block path and concrete circle dominated the garden and made 
+		it look longer and thinner. Charlotte counteracted this with curved beds and a new seating area to catch the evening sun. 
+		These beds now enclose the plain circle and are planted with a profusion of bee-friendly plants that tumble over, softening 
+		the edges. Dominic was keen to embrace the industrial heritage of the canal so Charlotte suggested painting the fences grey and 
+		the dated-looking white columns black. Simple things can make a big difference! The client is delighted and says he has fallen in 
+		love with the garden and gardening.</p>
+	<p class="lead">Thanks to Anthony Dear Landscapes for the build and to the client for the “Before” pictures.</p>
+	<Gallery>
+		<GalleryImage tallCaption title="The Low-Maintenance, Bee-Friendly Garden — Before">
+			<Image
+				title="The Low-Maintenance, Bee-Friendly Garden — Before"
+        alt="Overgrown grass and flowerbeds, this time looking towards the house and its balcony"
+				src={beforeToHouse}
+			/>
+		</GalleryImage>
+		<GalleryImage tallCaption title="The Low-Maintenance, Bee-Friendly Garden — After">
+			<Image
+				title="The Low-Maintenance, Bee-Friendly Garden — After"
+				src={afterToHouse}
+        alt="The same view of the house. The grass has been replaced with a bistro set on gravel, surrounded by bright flowerbeds"
+			/>
+		</GalleryImage>
+	</Gallery>
+	<Testimonial keyName="dom" />
+	<div class="album">
+		<Image
+			class="img-large"
+			src={drawing}
+			title="The drawing for the garden" alt="Charlotte's drawing for the low-maintenance, bee-friendly garden"
+		/>
+	</div>
+	<div class="center">
+		<p class="lead">
+			<a href="/#design">Back to Charlotte's Gardens</a>
+		</p>
+	</div>
+</Layout>

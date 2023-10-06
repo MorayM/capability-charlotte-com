@@ -1,0 +1,120 @@
+---
+import { Image } from 'astro:assets';
+import yy from '../../images/yy/yy-back-after-m.webp';
+import lavendar from '../../images/front-gardens/vt-front-lavendar-m.webp';
+import lm from '../../images/low-maintenance/cover.jpg';
+import lb from '../../images/low-budget/cover.jpg';
+import ac from '../../images/arts-crafts/lutyens.jpg';
+import nb from '../../images/new-build/cover.jpg';
+import italian from '../../images/italian/archway-after.jpg';
+import ln from '../../images/long-narrow/long-narrow-after.jpg';
+
+import Gallery from '../Gallery.astro';
+import GalleryImage from '../GalleryImage.astro';
+---
+
+<section>
+	<h2 id="design">Some of Charlotte's Gardens</h2>
+	<p class="lead">
+		Charlotte can design for any area, in any style and for any budget. She draws
+		exclusively by hand and is able to call on her extensive knowledge of classical art, garden history
+		and modern garden trends as inspiration. Below are some examples of her work.
+	</p>
+	<Gallery>
+		<GalleryImage
+			title="The Yin and Yang Garden"
+			narrowTallCaption
+			link="/yin-yang"
+			text="Even a garden full of solid clay and rubble can become a beautiful wildlife-friendly haven!"
+		>
+			<Image
+				alt="A view of an Arts and Crafts garden, in the style of Lutyens, designed by Capability Charlotte."
+				title="The Yin and Yang Garden"
+				src={yy}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="Front Gardens"
+			narrowTallCaption
+			link="/front-gardens"
+			text="Charlotte thinks that front gardens are just as important as back gardens."
+		>
+			<Image
+				alt="A view of an Arts and Crafts garden, in the style of Lutyens, designed by Capability Charlotte."
+				title="Front Gardens"
+				src={lavendar}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The Low-Maintenance, Wildlife-Friendly Garden"
+			narrowTallCaption
+			link="/low-maintenance"
+			text="This long, narrow garden is in a beautiful location by a canal, but it was messy patch of grass and the client had fallen out of love with the space."
+			fomText="Find out how Charlotte turned the problem into the solution..."
+		>
+			<Image
+				alt="A view of a garden planted with lots of tall grasses and other wild plants leading down to a canal, designed by Capability Charlotte."
+				title="The Low-Maintenance, Wildlife-Friendly Garden"
+				src={lm}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The Small Budget Garden"
+			link="/small-budget"
+			text="This tiny space in Bradford on Avon was a dull patch of grass surrounded by cheap pavers. The clients are keen gardeners and wanted a garden that would be future-proof"
+			fomText="See how it was transformed..."
+		>
+			<Image
+				title="The Small Budget Garden"
+				alt="Charlotte's design for a small budget garden"
+				src={lb}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The Arts and Crafts Garden"
+			link="/arts-and-crafts"
+			text="This sloping garden in West Littleton was one of my largest garden designs to date, it was designed for a keen gardener and a keen vegetable grower."
+		>
+			<Image
+				title="The Arts and Crafts Garden"
+				alt="A view of an Arts and Crafts garden, in the style of Lutyens, designed by Capability Charlotte."
+				src={ac}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The New Build Garden"
+			link="/new-build"
+			text="This sloping, new-build garden In Melksham was a depressing patch of chafer grub addled grass and the client wanted to something to look out on while working on her kitchen table."
+		>
+			<Image
+				title="The New Build Garden"
+				alt="The new build garden, freshly planted"
+				src={nb}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The Italian Courtyard Garden"
+			link="/italian-courtyard"
+			text="Garden designs don’t have to be expensive or over complicated! This dingy, un-loved garden in Biddestone was transformed into a Mediterranean-inspired haven in a short time and for a low budget."
+			fomText="Find out about how it came back to life..."
+		>
+			<Image
+				title="The Italian Courtyard Garden"
+				alt="An Italianate courtyard garden, designed by Capability Charlotte. Features a wrought iron arch and a large mirror to make the space feel lighter and larger."
+				src={italian}
+			/>
+		</GalleryImage>
+		<GalleryImage
+			title="The Long Narrow Garden"
+			link="/long-narrow"
+			text="Several years later my client still raves about her garden! Based in Bristol, this is the classic, long, narrow garden you get with 1930s terraces."
+			fomText="Find out more about how I transformed it..."
+		>
+			<Image
+				title="The Long Narrow Garden"
+				alt="An challenge to a designer due to its size and shape, a circle of slabs and a summer house tie everything together."
+				src={ln}
+			/>
+		</GalleryImage>
+	</Gallery>
+</section>

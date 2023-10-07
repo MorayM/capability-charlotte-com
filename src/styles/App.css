@@ -452,9 +452,47 @@ form {
   padding-right: 1rem;
 }
 
-.blog-list ul {
-  list-style-type: none;
+.blog-list {
+  width: 100%;
+}
+
+.blog-list img {
+  width: 50%;
+}
+
+.blog-list a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-list h3 {
   width: auto;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog p {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-self: center;
+}
+
+.blog img {
+  width: 75%;
+  height: auto;
 }
 
 @media all and (-ms-high-contrast: none),
@@ -573,6 +611,9 @@ screen and (orientation: portrait) {
       font-size: 1.5rem;
   }
   .testimonial {
+    width: 100%;
+  }
+  .blog-list img {
     width: 100%;
   }
 }

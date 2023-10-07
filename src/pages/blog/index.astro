@@ -13,20 +13,18 @@ const posts = (await getCollection('blog')).sort(
 	description="Capability Charlotte's Blog"
 >
 	<section class="blog-list">
-		<ul>
 			{
 				posts.map((post) => (
-					<li>
+					<div class="blog-post">
 						<a href={`/blog/${post.slug}/`}>
-							<img width={720} height={360} src={post.data.heroImage} alt="" />
-							<h4 class="title">{post.data.title}</h4>
+							<img src={post.data.heroImage} alt="" />
+							<h3>{post.data.title}</h3>
 							<p class="date">
 								<FormattedDate date={post.data.pubDate} />
 							</p>
 						</a>
-					</li>
+					</div>
 				))
 			}
-		</ul>
 	</section>
 </Layout>

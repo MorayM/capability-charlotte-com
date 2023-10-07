@@ -29,3 +29,35 @@ const posts = (await getCollection('blog')).sort(
 			}
 	</section>
 </Layout>
+
+<style>
+.blog-list {
+  width: 100%;
+}
+
+.blog-post {
+	width: 50%;
+}
+
+.blog-list img {
+  width: 100%;
+}
+
+.blog-list a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.blog-list h3 {
+  width: auto;
+}
+
+@media screen and (max-width: 641px),
+screen and (orientation: portrait) {
+  .blog-post {
+    width: 100%;
+  }
+}
+</style>

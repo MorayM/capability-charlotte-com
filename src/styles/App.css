@@ -486,6 +486,10 @@ screen and (orientation: portrait) {
       align-items: center;
   }
 
+  nav {
+    position: relative;
+  }
+
   .navbar-nav {
       flex-direction: column;
       justify-content: flex-start;

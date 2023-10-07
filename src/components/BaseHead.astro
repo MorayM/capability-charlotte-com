@@ -46,3 +46,13 @@ const fullTitle = `${title} - Capability Charlotte - Wiltshire-based wildlife fr
 <meta property="twitter:title" content={fullTitle} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJBNNV9JY7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZJBNNV9JY7');
+</script>

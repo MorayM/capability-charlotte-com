@@ -23,4 +23,7 @@ const { Content } = await post.render();
 	<h1>{post.data.title}</h1>
 	<FormattedDate date={post.data.pubDate} />
 	<Content />
+	<p>
+		<a href="/blog">Back to blog</a>
+	</p>
 </Layout>

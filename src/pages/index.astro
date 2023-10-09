@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Brochure.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_DESCRIPTION } from '../consts';
 import Intro from '../components/sections/Intro.astro';
 import About from '../components/sections/About.astro';
 import Gardens from '../components/sections/Gardens.astro';
@@ -13,7 +13,7 @@ import Contact from '../components/sections/Contact.astro';
 import Outro from '../components/sections/Outro.astro';
 ---
 
-<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<Layout description={SITE_DESCRIPTION}>
 	<Intro />
 	<About />
 	<Gardens />

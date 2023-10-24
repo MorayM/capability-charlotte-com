@@ -41,13 +41,13 @@ I was only disappointed I was not able to meet him face-to-face for a round tabl
 
 But his blatant greenwashing evidently did not wash with the general public. A brief look at Twitter/ X will show you that not a single person bought his spiel.
 
-![Mr Easigrass didn't make a good case for his product, particularly when admitting that there is no way of recycling this junk in the UK](/blog/BBC-artificial-grass/twitter-1.png)
+![Mr Easigrass didn't make a good case for his product, particularly when admitting that there is no way of recycling this junk in the UK](/blog/BBC-artificial-grass/twitter-1.jpg)
 
-![I think Easigrass ppl [sic] twist the facts. Well drained to them means "I'm alright Jack but I'm going to shed water to all the adjacent properties rather than contribute to flood mitigation with organic matter aka self self self."](/blog/BBC-artificial-grass/twitter-2.png)
+![I think Easigrass ppl [sic] twist the facts. Well drained to them means "I'm alright Jack but I'm going to shed water to all the adjacent properties rather than contribute to flood mitigation with organic matter aka self self self."](/blog/BBC-artificial-grass/twitter-2.jpg)
 
-![I thought the bloke from Easigrass got too easy a ride. He should have been challenged over his assertion that no microplastics washed off his plastic. Also no one mentioned children getting plastic burns](/blog/BBC-artificial-grass/twitter-3.png)
+![I thought the bloke from Easigrass got too easy a ride. He should have been challenged over his assertion that no microplastics washed off his plastic. Also no one mentioned children getting plastic burns](/blog/BBC-artificial-grass/twitter-3.jpg)
 
-![Mr Easigrass talking shite. My cool, fresh, clean, grass doesn't need replacing after 10 years does it.](/blog/BBC-artificial-grass/twitter-4.png)
+![Mr Easigrass talking shite. My cool, fresh, clean, grass doesn't need replacing after 10 years does it.](/blog/BBC-artificial-grass/twitter-4.jpg)
 
 Unfortunately, I was not able to have my segment after his in order to counter his arguments, nor was I able to know what he said. But thankfully, I was asked the right questions by Arit, so my answers, combined with the studies that the show shared, were able to debunk all his sales techniques. He did not come off well in the court of public opinion.
 

@@ -454,9 +454,20 @@ form {
 }
 
 .announcement {
-  border: 3px solid #e4d188;
+  border: 3px solid #007b7e;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
+  background-color: #e4d188;
+}
+.announcement h2 {
+  text-align: center;
+}
+.announcement p {
+  font-size: 1.2rem;
+}
+.announcement a {
+  text-decoration: underline;
 }
 
 /* Blog styles */

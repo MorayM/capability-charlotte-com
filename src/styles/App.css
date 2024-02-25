@@ -206,6 +206,7 @@ h5 {
   color: #39294b;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -480,7 +481,7 @@ form {
   width: 100%;
 }
 
-.blog a {
+p a, li a {
   text-decoration: underline;
 }
 

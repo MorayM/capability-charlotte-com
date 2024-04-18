@@ -16,6 +16,27 @@ import Testimonial from '../Testimonial.astro';
 
 <section>
 	<h2 id="other">Other Services</h2>
+	<div class="columns">
+		<div class="col one-half">
+			<GalleryImage title="The perfect choice for a lower budget">
+				<Image
+					alt="Charlotte instructs a young couple in their garden."
+					title="The perfect choice for a lower budget"
+					src={swindon}
+					width={640}
+				/>
+			</GalleryImage>
+		</div>
+		<div class="col one-half">
+			<h3>"No-Frills" Garden Package</h3>
+			<p class="lead">
+				For those on a tight budget, Charlotte also offers "No-Frills" garden advice. This can be done in your garden or 
+				virtually over video call, just bring a notepad! This is priced at £100 an hour (travel expenses apply over 30 miles). 
+				Many clients like Elizabeth below have found this an invaluable service to start them off:
+			</p>
+			<Testimonial keyName="liz" />
+		</div>
+	</div>
 	<h3>Garden Advice Package</h3>
 	<p class="lead">
 		If you’ve taken on a new garden and are not sure what to do with it or you just need some fresh ideas for an old garden that you’ve fallen out of love with Charlotte can help.
@@ -47,27 +68,6 @@ import Testimonial from '../Testimonial.astro';
 		Sue is still using Charlotte’s advice report for inspiration and advice four years later:
 	</p>
 	<Testimonial keyName="sue" />
-	<div class="columns">
-		<div class="col one-half">
-			<GalleryImage title="The perfect choice for a lower budget">
-				<Image
-					alt="Charlotte instructs a young couple in their garden."
-					title="The perfect choice for a lower budget"
-					src={swindon}
-					width={640}
-				/>
-			</GalleryImage>
-		</div>
-		<div class="col one-half">
-			<h3>"No-Frills" Garden Package</h3>
-			<p class="lead">
-				For those on a tight budget, Charlotte also offers "No-Frills" garden advice. This can be done in your garden or 
-				virtually over video call, just bring a notepad! This is priced at £100 an hour (travel expenses apply over 30 miles). 
-				Many clients like Elizabeth below have found this an invaluable service to start them off:
-			</p>
-			<Testimonial keyName="liz" />
-		</div>
-	</div>
 	<h3>Indoor Gardening</h3>
 	<div class="columns">
 		<div class="col one-half">

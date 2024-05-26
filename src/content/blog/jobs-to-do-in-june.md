@@ -1,7 +1,7 @@
 ---
 title: 'June Gardening Jobs'
 description: 'Jobs to do in your garden in June'
-pubDate: '2024-06-01'
+pubDate: '2024-05-26'
 heroImage: '/blog/jobs-to-do-in-june/wild-garden.png'
 ---
 

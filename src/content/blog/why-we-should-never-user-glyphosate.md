@@ -1,7 +1,7 @@
 ---
 title: 'Why We Should Never User Glyphosate'
 description: ''
-pubDate: '2024-06-01'
+pubDate: '2024-05-30'
 heroImage: '/blog/why-we-should-never-user-glyphosate/shop-shelves.jpg'
 ---
 

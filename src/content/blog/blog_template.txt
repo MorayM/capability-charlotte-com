@@ -1,0 +1,7 @@
+---
+title: 'BLOG_TITLE'
+description: ''
+pubDate: 'BLOG_DATE'
+heroImage: '/blog/BLOG_DIR/hero.jpg'
+---
+

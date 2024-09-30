@@ -1,7 +1,7 @@
 ---
 title: 'Capability Charlotte’s Gardening Calendar - October'
 description: 'Charlotte’s jobs for your garden in the month of October.'
-pubDate: '2024-08-24'
+pubDate: '2024-09-30'
 heroImage: '/blog/gardening-calendar-october-2024/october-hero.jpg'
 ---
 

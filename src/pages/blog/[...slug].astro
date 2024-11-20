@@ -4,7 +4,7 @@ import Layout from '../../layouts/BlogPost.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
+	const posts = await getCollection('blog', p => p.data.pubDate <= new Date());
 	return posts.map((post) => ({
 		params: { slug: post.slug },
 		props: post,

@@ -1,5 +1,5 @@
 ---
-title: 'Capability Charlotte’s Gardening Calendar - September'
+title: 'Capability Charlotte’s Gardening Calendar - January'
 description: 'Charlotte’s jobs for your garden in the month of January.'
 pubDate: '2025-01-05'
 heroImage: '/blog/jobs-to-do-in-january-2025/hero.jpg'

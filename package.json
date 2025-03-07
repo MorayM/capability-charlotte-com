@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "engines": {
-    "node": "^20.11.0"
+    "node": "^22.14.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -16,10 +16,10 @@
     "lint": "pnpm run eslint && pnpm run stylelint"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.4",
-    "@astrojs/sitemap": "^3.0.5",
+    "@astrojs/rss": "^4.0.11",
+    "@astrojs/sitemap": "^3.2.1",
     "@iconify-json/fa-brands": "^1.1.8",
-    "astro": "^4.2.6",
+    "astro": "^5.4.2",
     "astro-icon": "^1.0.3",
     "sharp": "^0.32.6"
   },

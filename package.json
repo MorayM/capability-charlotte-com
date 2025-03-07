@@ -21,7 +21,7 @@
     "@iconify-json/fa-brands": "^1.1.8",
     "astro": "^5.4.2",
     "astro-icon": "^1.0.3",
-    "sharp": "^0.32.6"
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.7.5",

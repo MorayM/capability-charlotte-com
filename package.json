@@ -13,7 +13,8 @@
     "astro": "astro",
     "eslint": "eslint --ext .js,.astro,.ts src",
     "stylelint": "stylelint \"src/**/*.{astro,css,scss,html}\"",
-    "lint": "pnpm run eslint && pnpm run stylelint"
+    "lint": "pnpm run eslint && pnpm run stylelint",
+    "blog": "./scripts/blog.sh"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",

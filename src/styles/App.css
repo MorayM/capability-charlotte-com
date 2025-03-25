@@ -444,7 +444,7 @@ form {
   width: 100%;
 }
 
-.hidden {
+.visually-hidden {
   display: none;
 }
 

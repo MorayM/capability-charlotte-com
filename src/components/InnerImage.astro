@@ -17,7 +17,7 @@ if (narrowTallCaption) classes.push('narrow-tall-caption');
   <slot />
   {(title || text) && <div class={classes.join(' ')}>
     <h3>
-      {link ? <a href={link}>{title}</a> : title}
+      {link ? <a href={link} title={title}>{title}</a> : title}
     </h3>
     {text &&
       <p>

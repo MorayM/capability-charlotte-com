@@ -33,6 +33,7 @@ const fullTitle = [title, SITE_TITLE].filter(t => !!t).join(' - ');
 <title>{fullTitle}</title>
 <meta name="title" content={fullTitle} />
 <meta name="description" content={description} />
+<meta name="robots" content="index,follow">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -47,6 +48,40 @@ const fullTitle = [title, SITE_TITLE].filter(t => !!t).join(' - ');
 <meta property="twitter:title" content={fullTitle} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Capability Charlotte",
+    "url": "https://capabilitycharlotte.com/",
+    "logo": "https://capabilitycharlotte.com/logo.jpg",
+    "image": "https://capabilitycharlotte.com/header.jpg",
+    "description": "Award-winning garden designer based in Wiltshire, creating natural, wildlife-friendly gardens bursting with biodiversity from beautiful, hand-drawn designs.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Devizes",
+      "addressRegion": "Wiltshire",
+      "addressCountry": "GB"
+    },
+    "areaServed": [
+      "Wiltshire",
+      "Bath"
+    ],
+    "telephone": "+44 7850 065470",
+    "email": "info@capabilitycharlotte.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Charlotte Howard"
+    },
+    "sameAs": [
+      "https://www.facebook.com/capabilitycharlottegardens/",
+      "https://www.instagram.com/capabilitycharlotte/"
+    ]
+  }
+  </script>
+  
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJBNNV9JY7"></script>

@@ -30,8 +30,6 @@ http://npic.orst.edu/factsheets/glyphogen.html
 Glyphosate is also used as a crop desiccant; it is applied to a crop just before harvest to kill the leaves so that the crop dries out more quickly and evenly. This can contaminate plant pollen and nectar of non-targeted species thus killing our vital pollinators:
 https://www.cell.com/heliyon/fulltext/S2405-8440(22)03467-3
 
-![A bottle of Roundup being sprayed](/blog/why-we-should-never-use-glyphosate/roundup.jpg)
-
 ## The Dangers Of Glyphosate
 
 Although the U.S. Environmental Agency regards glyphosate weed killers as safe when used as directed, the International Agency on the Research for Cancer deems glyphosate to be “probably carcinogenic to humans.” and gave it its second-highest classification rating:

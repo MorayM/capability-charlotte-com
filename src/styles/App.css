@@ -304,6 +304,10 @@ h5 {
   height: auto;
 }
 
+.gallery-image a {
+  width: 100%;
+}
+
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
 

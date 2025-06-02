@@ -573,6 +573,10 @@ screen and (orientation: portrait) {
     width: 100%;
   }
 
+  .impact-gallery.impact-gallery-small .gallery-image {
+    width: 45%;
+  }
+
   .gallery-caption {
     max-height: 3rem;
   }
